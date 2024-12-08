@@ -27,4 +27,23 @@ To run tests in terminal type
   pytest tests.py
 ```
 
+## Important info 
+The task description says: "Consider the weather datasets you need to download after analyzing the restaurant dataset"
+
+I analyzed restaurants_df by lat/lng columns and calculated min/max
+values. All of the weather dataframes per each period inludes this 
+range. 
+
+After analyzing weather datasets I desided to use only the last 
+dataset per each month and that is why:
+
+    1. For each month all the data from one dataset to another 
+        is filled for the same lat/lng, 
+        but has different temperature for each day
+    
+    2. Consider the previous point, it sounds logical to save the 
+     data of the last days for each month since it is better to
+     have the newest data for the same lat/lng. 
+     I saved 3 datasets in total, 1 for October, August, September, and then join this data to restaurants_df.
+
 ## I left the comments in the project files, but if smth is unclear, please write me directly
