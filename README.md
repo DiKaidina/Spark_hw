@@ -1,6 +1,5 @@
 # Spark_hw
 
-A brief description of what this project works
 
 ## Project structure
 
@@ -27,3 +26,5 @@ To run tests in terminal type
 ```bash
   pytest tests.py
 ```
+
+## I left the comments in the project files, but if smth is unclear, please write me directly
